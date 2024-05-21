@@ -1,6 +1,5 @@
 // Copyright 2008-2018 Yolo Technologies, Inc. All Rights Reserved. https://www.comblockengine.com
-#ifndef KBE_STRING_CONV_H
-#define KBE_STRING_CONV_H
+#pragma once
 #include "common/platform.h"
 
 namespace KBEngine{
@@ -122,6 +121,5 @@ inline void str2value(uint64& value, const char * pstr)
 }
 }
 
-#endif // KBE_STRING_CONV_H
 
 

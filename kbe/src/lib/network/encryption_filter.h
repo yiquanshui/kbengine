@@ -6,9 +6,9 @@
 
 #include "network/packet_filter.h"
 
-#ifdef USE_OPENSSL
+//#ifdef USE_OPENSSL
 #include "common/blowfish.h"
-#endif
+//#endif
 
 namespace KBEngine { 
 namespace Network

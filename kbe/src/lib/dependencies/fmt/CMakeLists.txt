@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1.0)
+cmake_minimum_required(VERSION 3.22.0)
 
 # Use newer policies if available, up to most recent tested version of CMake.
 if(${CMAKE_VERSION} VERSION_LESS 3.11)
@@ -152,10 +152,10 @@ endfunction()
 # Define the fmt library, its includes and the needed defines.
 add_headers(FMT_HEADERS color.h core.h format.h format-inl.h ostream.h printf.h
                         time.h ranges.h)
-set(FMT_SOURCES src/format.cc)
+set(FMT_SOURCES src/format.cpp)
 if (HAVE_OPEN)
   add_headers(FMT_HEADERS posix.h)
-  set(FMT_SOURCES ${FMT_SOURCES} src/posix.cc)
+  set(FMT_SOURCES ${FMT_SOURCES} src/posix.cpp)
 endif ()
 
 add_library(fmt ${FMT_SOURCES} ${FMT_HEADERS} README.rst ChangeLog.rst)

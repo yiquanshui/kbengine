@@ -3,9 +3,9 @@
 #include "profile.h"
 #include "helper/watcher.h"
 
-#ifndef CODE_INLINE
+//#ifndef CODE_INLINE
 #include "profile.inl"
-#endif
+//#endif
 
 
 namespace KBEngine

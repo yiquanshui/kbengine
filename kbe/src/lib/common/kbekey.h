@@ -4,14 +4,14 @@
 #define KBENGINE_KEY_H
 
 #include "rsa.h"
-#include "common/singleton.h"
+#include "singleton.h"
 
 namespace KBEngine
 {
 
 
 /**
- *	引擎的key管理
+ *	寮曟搸鐨刱ey绠＄悊
  */
 class KBEKey : public KBE_RSA, public Singleton<KBEKey>
 {

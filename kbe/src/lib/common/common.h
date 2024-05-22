@@ -1,11 +1,11 @@
 // Copyright 2008-2018 Yolo Technologies, Inc. All Rights Reserved. https://www.comblockengine.com
 #ifndef KBE_COMMON_H
 #define KBE_COMMON_H
-#include "common/platform.h"
-#include "common/singleton.h"
-#include "common/kbeversion.h"
-#include "common/kbemalloc.h"
-#include "common/stringconv.h"
+#include "platform.h"
+#include "singleton.h"
+#include "kbeversion.h"
+#include "kbemalloc.h"
+#include "stringconv.h"
 #include "fmt/format.h"
 
 namespace KBEngine{

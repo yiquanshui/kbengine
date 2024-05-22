@@ -1,8 +1,9 @@
 // Copyright 2008-2018 Yolo Technologies, Inc. All Rights Reserved. https://www.comblockengine.com
 
 #include "blowfish.h"
-#include "helper/debug_helper.h"
 #include "openssl/rand.h"
+#include "fmt/format.h"
+#include "debug_helper.h"
 
 namespace KBEngine { 
 
@@ -85,7 +86,7 @@ const char * KBEBlowfish::strBlowFishKey() const
 int KBEBlowfish::encrypt( const unsigned char * src, unsigned char * dest,
 	int length )
 {
-	// BLOCK_SIZEµÄÕûÊý±¶
+	// BLOCK_SIZEï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	if(length % BLOCK_SIZE != 0)
 	{
 		CRITICAL_MSG(fmt::format("Blowfish::encrypt: "

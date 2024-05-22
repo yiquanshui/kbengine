@@ -3,8 +3,8 @@
 #ifndef KBE_MEMORYSTREAM_H
 #define KBE_MEMORYSTREAM_H
 
-#include "common/common.h"
-#include "common/objectpool.h"
+#include "common.h"
+#include "objectpool.h"
 #include "helper/debug_helper.h"
 #include "common/memorystream_converter.h"
 	

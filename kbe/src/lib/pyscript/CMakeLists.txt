@@ -1,5 +1,5 @@
 aux_source_directory(. sources)
 add_library(pyscript STATIC ${sources})
 find_package(Python3 COMPONENTS Development.Embed)
-target_link_libraries(pyscript PUBLIC Python3::Python G3dLite common)
+target_link_libraries(pyscript PUBLIC Python3::Python G3dLite common resmgr)
 target_compile_options(pyscript PRIVATE -Wno-invalid-offsetof)

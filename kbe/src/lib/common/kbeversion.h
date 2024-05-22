@@ -3,7 +3,7 @@
 #ifndef KBEVERSION_H
 #define KBEVERSION_H
 
-#include "common/platform.h"
+#include "platform.h"
 
 namespace KBEngine{
 	

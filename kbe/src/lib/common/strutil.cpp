@@ -8,7 +8,7 @@
 #include <utility>
 #include <functional>
 #include <cctype>
-#include "utf8cpp/utf8.h"
+#include "utf8.h"
 #include "memorystream.h"
 
 namespace KBEngine{ 

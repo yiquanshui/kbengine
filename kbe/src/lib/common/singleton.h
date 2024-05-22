@@ -2,11 +2,11 @@
 
 
 /*
-	用法:
+	锟矫凤拷:
 		class A:public Singleton<A>
 		{
 		};
-		在cpp文件中:
+		锟斤拷cpp锟侥硷拷锟斤拷:
 		template<> A* Singleton<A>::singleton_ = 0;
 */
 #ifndef KBE_SINGLETON_H
@@ -16,7 +16,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "common/platform.h"
+#include "platform.h"
 
 namespace KBEngine{
 	

@@ -13,7 +13,10 @@ set(sources
 )
 
 find_package(log4cxx)
+#find_package(tinyxml CONFIG REQUIRED)
 add_library(helper STATIC ${sources})
-target_include_directories(helper PRIVATE
-		$<TARGET_PROPERTY:log4cxx,INTERFACE_INCLUDE_DIRECTORIES>)
-target_link_libraries(helper PRIVATE common log4cxx sigar)
+target_include_directories(helper PUBLIC . PRIVATE ..
+		$<TARGET_PROPERTY:log4cxx,INTERFACE_INCLUDE_DIRECTORIES>
+)
+target_link_libraries(helper PUBLIC common log4cxx sigar resmgr
+)

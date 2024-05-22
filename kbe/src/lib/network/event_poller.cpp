@@ -9,10 +9,6 @@
 namespace KBEngine { 
 namespace Network
 {
-	
-#if KBE_PLATFORM != PLATFORM_WIN32
-#define HAS_EPOLL
-#endif
 
 //-------------------------------------------------------------------------------------
 EventPoller::EventPoller() : 

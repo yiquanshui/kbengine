@@ -4,6 +4,6 @@ add_executable(baseapp)
 #find_package(Python3 COMPONENTS Development)
 aux_source_directory(. sources)
 target_sources(baseapp PRIVATE ${sources})
-target_link_libraries(baseapp PUBLIC common pyscript server)
+target_link_libraries(baseapp PUBLIC common pyscript server helper entitydef PRIVATE network)
 
 target_include_directories(baseapp PRIVATE ..)

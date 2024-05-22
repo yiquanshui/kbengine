@@ -5,11 +5,7 @@
 
 #include "event_poller.h"
 
-#if KBE_PLATFORM != PLATFORM_WIN32
-#define HAS_EPOLL
-#endif
-
-namespace KBEngine { 
+namespace KBEngine {
 namespace Network
 {
 

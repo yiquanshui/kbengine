@@ -1,0 +1,5 @@
+find_package(hiredis CONFIG REQUIRED)
+aux_source_directory(. sources)
+add_library(DbInterface ${sources})
+target_include_directories(DbInterface PUBLIC ..)
+target_link_libraries(DbInterface PRIVATE fmt helper pyscript hiredis::hiredis)

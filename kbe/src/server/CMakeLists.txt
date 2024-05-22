@@ -6,3 +6,5 @@ add_subdirectory(cellappmgr)
 add_subdirectory(dbmgr)
 add_subdirectory(loginapp)
 add_subdirectory(machine)
+
+add_subdirectory(tools/kbcmd)
